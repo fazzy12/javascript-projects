@@ -1,0 +1,134 @@
+:root {
+    /* Colors */
+
+    /* Primary */
+
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+body {
+    background-color: var(--Very-light-grayish-cyan);
+}
+
+.header-container {
+    width: 50%;
+    margin: auto;
+}
+
+.copy-text{
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.w {
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+}
+
+.o {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+.r {
+    background-color: var(--Strong-cyan);
+    color: var(--White);
+}
+
+.d {
+    background-color: var(--Dark-grayish-cyan);
+}
+
+.w,
+.o,
+.r,
+.d {
+    padding: 5px;
+}
+
+.counter {
+    background-color: var(--Light-grayish-cyan);
+    padding: 5px;
+}
+
+.textarea-container{
+    width: 80%;
+    margin: auto;
+}
+
+.count-header{
+    text-align: center;
+    font-size: 25px;
+}
+
+textarea{
+    resize: vertical;
+    width: 60%;
+    display: block;
+    outline: none;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    border: 3px solid var(--Very-dark-cyan);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.options{
+    width: 50%;
+    margin: auto;
+}
+
+li{
+    float: right;
+    margin: 5px;
+    list-style: none;
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan);
+    width: 10%;
+    padding: 15px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+li:hover {
+    background-color: var(--Grayish-cyan);
+}
+
+i{
+    font-size: 25px;
+}
