@@ -1,0 +1,59 @@
+html{
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.quote-container{
+    width: 60%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    width: 90%;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.quote-box{
+    margin: auto;
+}
+
+button{
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 28%;
+    margin-top: 20px;
+    height: 60px;
+    width: 45%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* media queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

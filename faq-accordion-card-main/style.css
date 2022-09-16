@@ -1,0 +1,186 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    /* Text */
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* Gradient */
+
+    /* Background gradient: */
+
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral */
+
+    /* Text */
+
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    box-sizing: initial;
+}
+
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+
+.row{
+    margin: 0 auto;
+}
+
+body{
+    line-height: 1.7;
+    font-weight: 400;
+    word-spacing: 1.2;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+}
+
+main{
+    position: relative;
+    background-color: var(--Light-grayish-blue);
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: -13% center;
+    /* width: 70%; */
+    max-width: 900px;
+    /* height: 400px; */
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+}
+
+.accordion-item{
+    margin-top: 20px;
+}
+
+.panel{
+    font-size: 12px;
+    display: none;
+}
+
+.accordion-container{
+    width: 80%;
+    margin-top: 30px;
+}
+
+/* svgs */
+
+.svg-div{
+    width: 100%;
+}
+.svg-partern{
+    /* position: absolute; */
+    /* width: 100%; */
+    /* transform: translate(-0.1%, -0.1%);
+    -webkit-transform: translate(-0.1%, -0.1%);
+    -moz-transform: translate(-0.1%, -0.1%);
+    -ms-transform: translate(-0.1%, -0.1%);
+    -o-transform: translate(-0.1%, -0.1%); */
+    /* width: 100%; */
+}
+
+.svg-cube{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50);
+    -webkit-transform: translateX(-50%) translateY(-50);
+    -moz-transform: translateX(-50%) translateY(-50);
+    -ms-transform: translateX(-50%) translateY(-50);
+    -o-transform: translateX(-50%) translateY(-50);
+}
+
+.svg-lady{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+    z-index: 1;
+    
+}
+
+span{
+    float: right;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        width: 90%;
+        height: 1000px;
+        margin: 60px auto;
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center -10%;
+}
+
+    .svg-partern{
+        /* transform: translate(-50%, -100);
+        -webkit-transform: translate(-50%, -100);
+        -moz-transform: translate(-50%, -100);
+        -ms-transform: translate(-50%, -100);
+        -o-transform: translate(-50%, -100); */
+}
+
+    .svg-cube{
+        display: none;
+    }
+
+    .svg-lady{
+        width: 50%;
+        max-width: 150px;
+        margin: auto;
+        display: block;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
