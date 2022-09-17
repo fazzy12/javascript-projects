@@ -1,0 +1,126 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    background-color: var(--Light-grayish-cyan);
+    font-size: 24px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box{
+    width: 70%;
+    margin: auto;
+    height: 400px;
+    margin-top: 60px;
+    background-color: var(--Strong-cyan);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.box div{
+    float: left;
+}
+
+.num1,
+.num2{
+    width: 20%;
+    height: 100px;
+    border: 2px solid var(--Very-dark-cyan);
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.functions{
+    margin-top: 60px;
+    width: 100%;
+    margin-left: 70px;
+}
+
+.num1,
+.num2,
+.addition, 
+.equal{
+    margin: 5px;
+}
+ 
+.addition h1,
+.equal h1{
+    font-size: 70px;
+}
+
+input{
+    height: 40px;
+    padding-left: 5px;
+    background-color: var(--Light-grayish-cyan);
+    text-align: center;
+}
+
+button{
+    width: 15%;
+    padding: 8px;
+    background-color: var(--Dark-grayish-cyan);
+
+}
+
+input,
+button{
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    float: left;
+    margin: 5px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 13px;
+}
+
+
+.results-container h1{
+    float: left;
+    font-size: 15px;
+    margin: 30px;
+}
+
+.results-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    
+}

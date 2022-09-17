@@ -1,0 +1,148 @@
+body{
+    font-family: 'space mono', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    overflow-x: hidden;
+}
+
+.container-para{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    /* display: none; */
+}
+
+p{
+    font-size: 13px;
+    margin: 10px;
+    float: right;
+    line-height: 20px;
+    letter-spacing: 1px;
+    width: 30%;
+}
+
+i{
+    font-size: 30px;
+}
+.page-header{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    width: 35%;
+    font-size: 20px;
+    margin-left: 32%;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.modal-container{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    visibility: hidden;
+    width: 60%;
+    border: 2px solid;
+    background-color: rgba(184, 147, 147, 0.9);
+    color: aliceblue;
+    height: 450px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.modal-container-open{
+    visibility: visible;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 60%;
+    border: 2px solid;
+    background-color: rgba(184, 147, 147, 0.9);
+    color: aliceblue;
+    height: 450px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.modal-body{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.fa-xmark{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.fa-xmark:hover{
+    border: 1px solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    p{
+        font-size: 13px;
+        margin-top: 30px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    button{
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        margin-left: 1%;
+        margin-top: 20px;
+        cursor: pointer;
+        letter-spacing: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .modal-container{
+        width: 90%;
+        left: 5%;
+        top: 10%;
+        height: 700px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+

@@ -1,0 +1,159 @@
+:root{
+     /* Colors */
+
+     /* Primary */
+
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Text', Arial, Helvetica, sans-serif;
+    Font-size: 14px
+}
+
+main{
+    background-color: var(--Very-dark-mostly-black-blue);
+    width: 100%;
+    height: 100vh;
+}
+
+.svg-star,
+.svg-hill{
+    width: 100%;
+}
+
+.svg-star{
+    height: 250px;
+}
+.svg-hill{
+    position: absolute;
+    top: 67.40%;
+}
+
+.launching{
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 25%;
+}
+
+.launching h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--White);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-weight: 700;
+}
+
+.countdown-container{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    width: 50%;
+}
+
+.countdown-container .div{
+    background-color: var(--Dark-desaturated-blue);
+    float: left;
+    margin: 15px;
+    height: 100px;
+    width: 20%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.countdown-container h1{
+    text-align: center;
+    font-size: 60px;
+    color: var(--Soft-red);
+}
+
+.countdown-container h3{
+    position: absolute;
+    top: 100%;
+    color: var(--Grayish-blue);
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.day-label{
+    left: 10%;
+}
+.hours-label{
+    left: 33%;
+}
+.minutes-label{
+    left: 57%;
+}
+.seconds-label{
+    left: 82%;
+}
+
+.icon-container{
+    position: absolute;
+    top: 80%;
+    left: 37%;
+    width: 30%;
+}
+
+.icon-container ul{
+    margin-left: 130px;
+}
+
+.icon-container li{
+    float: left;
+    color: var(--Grayish-blue);
+    margin: 10px;
+    list-style: none;
+}
+
+.icon-container img{
+    width: 70%;
+}
+
+.icon-container img{
+    fill: var(--Soft-red);
+}
+
+  .attribution {
+    position: absolute;
+    top: 95%;
+    left: 42%;
+    font-size: 11px; 
+    text-align: center;
+ }
+  .attribution a { 
+    color: var(--White);
+    word-spacing: 4px;
+    letter-spacing: 3px;
+ }
+
+
+
+
+
+
+
+
+
+
+
