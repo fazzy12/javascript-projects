@@ -78,12 +78,7 @@ main{
     overflow: hidden;
 }
 
-.accordion-item{
-    margin-top: 20px;
-}
-
-.panel{
-    font-size: 12px;
+.accordion-content{
     display: none;
 }
 
@@ -137,6 +132,9 @@ span{
     float: right;
 }
 
+
+
+/* media query */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     main{
@@ -147,6 +145,7 @@ span{
         background-repeat: no-repeat;
         background-size: 60%;
         background-position: center -10%;
+        
 }
 
     .svg-partern{
@@ -162,12 +161,19 @@ span{
     }
 
     .svg-lady{
+        position: relative;;
         width: 50%;
         max-width: 150px;
         margin: auto;
         display: block;
-
-    }
+        transform: translate(-5%, -40%);
+        -webkit-transform: translate(-5%, -40%);
+        -moz-transform: translate(-5%, -40%);
+        -ms-transform: translate(-5%, -40%);
+        -o-transform: translate(-5%, -40%);
+        
+        
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
