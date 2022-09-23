@@ -1,5 +1,30 @@
 :root{
-    
+    /* Colors */
+
+    /* Primary */
+
+    /* Text */
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* Gradient */
+
+    /* Background gradient: */
+
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral */
+
+    /* Text */
+
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+
+    --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
 *{
@@ -9,3 +34,60 @@
     overflow-x: hidden;
 }
 
+body{
+    font-size: 16px;
+    color: var(--Light-grayish-blue);
+    background-color: var(--Very-dark-desaturated-blue);
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+.row{
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+    flex-direction: ;
+}
+
+main{
+    
+}
+
+.registration-container{
+    background-color: var(--Light-grayish-blue);
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile design */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .registration-container{
+        width: 90%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
