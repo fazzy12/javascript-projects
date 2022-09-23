@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
     <title>Form validation</title>
 </head>
 <body>
     <main>
         <h1>Registration form</h1>
-        <div class="registration-container">
-            <div class="row">
-                <form></form>
-                
+            <div class="row registration-container">
+                <div class="col span-1-of-2 form-box">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="input-username">Username</label>
+                            <input type="text" class="form-control" id="input-username" placeholder="type a user name">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-Email">Email</label>
+                            <input type="email" class="form-control" id="input-Email" placeholder=" Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-phone">phone number</label>
+                            <input type="tel" class="form-control" id="input-phone" placeholder="Enter number E.g +234 000 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail4">Password</label>
+                            <input type="password" class="form-control" id="inputEmail4" placeholder="create a password">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-password-confirm">Confirm password</label>
+                            <input type="password" class="form-control" id="input-password-confirm" placeholder="confirm password">
+                        </div>
+
+                        <button type="submit">sign up</button>
+                    </form>
+
+                </div>
+                <div class="col span-1-of-2 form-background">
+                    
+                </div>
+
             </div>
-        </div>
     </main>
+
+    <!-- javascript tag -->
+    <script src="index.js"></script>
 </body>
 </html>
