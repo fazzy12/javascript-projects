@@ -251,35 +251,35 @@ button{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .registration-container{
-        width: 90%;
+        width: 80%;
     }
 
 
 
     .fa-solid{
         color: var(--Soft-blue);
-        left: 7%;
+        left: 12%;
     }
 
     .fa-user{
         position: absolute;
-        top: 71%;
+        top: 60%;
     }
     .fa-envelope{
         position: absolute;
-        top: 88%;
+        top: 74%;
     }
     .fa-phone{
         position: absolute;
-        top: 104%;
+        top: 87%;
     }
     .lock0{
         position: absolute;
-        top: 120%;
+        top: 100%;
     }
     .lock1{
         position: absolute;
-        top: 136%;
+        top: 114%;
     }
 
     h1{
@@ -302,6 +302,11 @@ button{
         width: 50%;
         margin: auto;
         margin-top: 20px;
+    }
+
+    body{
+        height: 100vh;
+        position: fixed;
     }
 }
 
