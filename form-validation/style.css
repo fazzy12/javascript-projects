@@ -56,8 +56,8 @@ h1{
     -moz-text-decoration-color: var(--Soft-blue);
 }
 
-main{
-    
+label{
+    font-size: 12px;
 }
 
 .registration-container{
@@ -73,7 +73,7 @@ main{
 
 form input{
     /* position: relative; */
-    font-size: 15px;
+    font-size: 12px;
     font-family: inherit;
     width: 100%;
     padding: 7px;
@@ -110,23 +110,23 @@ form input:focus{
 
 .fa-user{
     position: absolute;
-    top: 30%;
+    top: 29%;
 }
 .fa-envelope{
     position: absolute;
-    top: 42%;
+    top: 41%;
 }
 .fa-phone{
     position: absolute;
-    top: 54%;
+    top: 52%;
 }
 .lock0{
     position: absolute;
-    top: 66%;
+    top: 64%;
 }
 .lock1{
     position: absolute;
-    top: 78%;
+    top: 75%;
 }
 
 
@@ -157,7 +157,7 @@ button{
     margin: 20px 110px;
     color: var(--Light-grayish-blue);
     border: none;
-    background-color: var(--Dark-grayish-blue);
+    background-color: var(--Soft-blue);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -247,9 +247,10 @@ button{
 
 
 /* mobile design */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* .registration-container{
+    .registration-container{
         width: 90%;
     }
 
@@ -262,27 +263,27 @@ button{
 
     .fa-user{
         position: absolute;
-        top: 83%;
+        top: 71%;
     }
     .fa-envelope{
         position: absolute;
-        top: 100%;
+        top: 88%;
     }
     .fa-phone{
         position: absolute;
-        top: 118%;
+        top: 104%;
     }
     .lock0{
         position: absolute;
-        top: 135%;
+        top: 120%;
     }
     .lock1{
         position: absolute;
-        top: 152%;
+        top: 136%;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
 
@@ -306,60 +307,18 @@ button{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .registration-container{
-        width: 90%;
-    }
 
-
-
-    .fa-solid{
-        color: var(--Soft-blue);
-        left: 7%;
-    }
-
-    .fa-user{
-        position: absolute;
-        top: 83%;
-    }
-    .fa-envelope{
-        position: absolute;
-        top: 100%;
-    }
-    .fa-phone{
-        position: absolute;
-        top: 118%;
-    }
-    .lock0{
-        position: absolute;
-        top: 135%;
-    }
-    .lock1{
-        position: absolute;
-        top: 152%;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
-
-    button{
-        width: 80%;
-        margin: 20px 30px;
-    }
-
-
-    .form-background{
-        display: none;
-    } */
-
-    /* .mobile{
-        display: block;
-        width: 50%;
-        margin: auto;
-        margin-top: 20px;
-    } */
 } 
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
+
+
+
+
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
