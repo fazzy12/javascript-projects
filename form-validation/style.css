@@ -262,23 +262,18 @@ button{
     }
 
     .fa-user{
-        position: absolute;
         top: 60%;
     }
     .fa-envelope{
-        position: absolute;
         top: 74%;
     }
     .fa-phone{
-        position: absolute;
         top: 87%;
     }
     .lock0{
-        position: absolute;
         top: 100%;
     }
     .lock1{
-        position: absolute;
         top: 114%;
     }
 
