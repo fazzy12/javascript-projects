@@ -38,7 +38,7 @@ body{
     font-size: 16px;
     color: var(--Light-grayish-blue);
     background-color: var(--Very-dark-grayish-blue);
-    font-family: 'Roboto Mono', 'monospace', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
 .row{
@@ -72,9 +72,15 @@ main{
 }
 
 form input{
+    /* position: relative; */
+    font-size: 15px;
+    font-family: inherit;
     width: 100%;
-    padding: 10px;
+    padding: 7px;
+    color: var(--Soft-blue);
+    padding-left: 40px;
     outline: none;
+    border: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -82,15 +88,85 @@ form input{
     -o-border-radius: 5px;
 }
 
+form input:focus{
+    border: none;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+
+
+.form-control{
+    position: relative;
+}
+
+.fa-solid{
+    color: var(--Soft-blue);
+    left: 16%;
+}
+
+.fa-user{
+    position: absolute;
+    top: 30%;
+}
+.fa-envelope{
+    position: absolute;
+    top: 42%;
+}
+.fa-phone{
+    position: absolute;
+    top: 54%;
+}
+.lock0{
+    position: absolute;
+    top: 66%;
+}
+.lock1{
+    position: absolute;
+    top: 78%;
+}
+
+
 .form-group{
     margin-top: 10px;
+    display: block;
 }
+
+form{
+    display: block;
+}
+
 .form-background{
     width: 100%;
     height: 300px;
     background-image: url(./undraw_investor_update_re_qnuu.svg);
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+
+button{
+    width: 50%;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 110px;
+    color: var(--Light-grayish-blue);
+    border: none;
+    background-color: var(--Dark-grayish-blue);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.mobile{
+    display: none;
 }
 
 
@@ -173,13 +249,117 @@ form input{
 /* mobile design */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .registration-container{
+    /* .registration-container{
         width: 90%;
+    }
+
+
+
+    .fa-solid{
+        color: var(--Soft-blue);
+        left: 7%;
+    }
+
+    .fa-user{
+        position: absolute;
+        top: 83%;
+    }
+    .fa-envelope{
+        position: absolute;
+        top: 100%;
+    }
+    .fa-phone{
+        position: absolute;
+        top: 118%;
+    }
+    .lock0{
+        position: absolute;
+        top: 135%;
+    }
+    .lock1{
+        position: absolute;
+        top: 152%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+
+    button{
+        width: 80%;
+        margin: 20px 30px;
+    }
+
+
+    .form-background{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+    .registration-container{
+        width: 90%;
+    }
+
+
+
+    .fa-solid{
+        color: var(--Soft-blue);
+        left: 7%;
+    }
+
+    .fa-user{
+        position: absolute;
+        top: 83%;
+    }
+    .fa-envelope{
+        position: absolute;
+        top: 100%;
+    }
+    .fa-phone{
+        position: absolute;
+        top: 118%;
+    }
+    .lock0{
+        position: absolute;
+        top: 135%;
+    }
+    .lock1{
+        position: absolute;
+        top: 152%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+
+    button{
+        width: 80%;
+        margin: 20px 30px;
+    }
+
+
+    .form-background{
+        display: none;
+    } */
+
+    /* .mobile{
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+    } */
+} 
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...} */
