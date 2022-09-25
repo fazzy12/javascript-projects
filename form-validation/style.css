@@ -116,7 +116,7 @@ form input:focus{
     color: var(--Soft-blue);
     position: absolute;
     left: 10px;
-    top: 30px;
+    top: 28px;
 }
 
 .form-background{
@@ -128,12 +128,13 @@ form input:focus{
 }
 
 button{
-    width: 50%;
+    width: 70%;
     padding: 5px;
+    cursor: pointer;
     font-family: inherit;
     font-size: 17px;
     font-weight: 700;
-    margin: 20px 110px;
+    margin: 20px 60px;
     color: var(--Light-grayish-blue);
     border: none;
     background-color: var(--Soft-blue);
