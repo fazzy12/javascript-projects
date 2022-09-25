@@ -72,7 +72,6 @@ label{
 }
 
 form input{
-    /* position: relative; */
     font-size: 12px;
     font-family: inherit;
     width: 100%;
@@ -99,44 +98,25 @@ form input:focus{
 
 
 
-.form-control{
+.form-group1,
+.form-group2,
+.form-group3,
+.form-group4,
+.form-group5{
     position: relative;
-}
-
-.fa-solid{
-    color: var(--Soft-blue);
-    left: 16%;
-}
-
-.fa-user{
-    position: absolute;
-    top: 29%;
-}
-.fa-envelope{
-    position: absolute;
-    top: 41%;
-}
-.fa-phone{
-    position: absolute;
-    top: 52%;
-}
-.lock0{
-    position: absolute;
-    top: 64%;
-}
-.lock1{
-    position: absolute;
-    top: 75%;
-}
-
-
-.form-group{
     margin-top: 10px;
     display: block;
 }
 
-form{
-    display: block;
+.fa-user,
+.fa-envelope,
+.fa-phone,
+.lock0,
+.lock1{
+    color: var(--Soft-blue);
+    position: absolute;
+    left: 10px;
+    top: 30px;
 }
 
 .form-background{
@@ -146,7 +126,6 @@ form{
     background-repeat: no-repeat;
     background-size:cover;
 }
-
 
 button{
     width: 50%;
@@ -251,45 +230,7 @@ button{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .registration-container{
-        width: 80%;
-    }
-
-
-
-    .fa-solid{
-        color: var(--Soft-blue);
-        left: 12%;
-    }
-
-    .fa-user{
-        top: 60%;
-    }
-    .fa-envelope{
-        top: 74%;
-    }
-    .fa-phone{
-        top: 87%;
-    }
-    .lock0{
-        top: 100%;
-    }
-    .lock1{
-        top: 114%;
-    }
-
-    h1{
-        font-size: 25px;
-    }
-
-
-    button{
-        width: 80%;
-        margin: 20px 30px;
-    }
-
-
-    .form-background{
-        display: none;
+        width: 90%;
     }
 
     .mobile{
@@ -299,26 +240,24 @@ button{
         margin-top: 20px;
     }
 
-    body{
-        height: 100vh;
-        position: fixed;
+    .form-background{
+        display: none;
     }
-}
+
+    h1{
+        font-size: 25px;
+    }
+
+    button{
+        width: 80%;
+        margin: 29px;
+    }
+
+
+
+} 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
 } 
-
-
-
-
-
-
-
-@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
