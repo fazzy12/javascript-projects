@@ -4,11 +4,20 @@ const btn  = document.querySelector('button')
 const userName = document.querySelector('#input-username')
 const mailInput = document.querySelector('#input-Email')
 const phoneInput = document.getElementById('input-phone')
+const passwordEl = document.querySelector('#input-password')
+const passwordConfirmEl = document.querySelector('#input-password-confirm')
 
 // labels
 const userLabel = document.querySelector('.user-label')
 const emailLabel = document.querySelector('.email-label')
 const phoneLabel = document.querySelector('.phone-label')
+const passwordLabel = document.querySelector('.password-label')
+const passwordMatchLabel = document.querySelector('.password-match-label')
+
+
+// icons
+const eyeOne = document.querySelector('.fa-eye-slash')
+// const eyeTwo = document.querySelector('.lock1')
 
 
 // username function
@@ -26,7 +35,7 @@ function usernameFunction() {
     }
 
     if (userval === ""){
-        userLabel.textContent = 'username input cannot be empty' 
+        userLabel.textContent = 'input cannot be empty' 
         userLabel.style.color = 'red'
         userLabel.style.fontSize = '10px'
     }
@@ -49,45 +58,76 @@ function emailFunction(){
     }
 
     if (mail === ""){
-        emailLabel.innerHTML = 'email input cannot be empty'
+        emailLabel.innerHTML = 'input cannot be empty'
     }
 }
 
 // phone number function
-function formatToPhone() {
+function formatPhone() {
     let phoneVal = phoneInput.value
 
 
-    // check countryCode
-    let countryCode = phoneVal.substring(0, 3).split()
-    console.log(countryCode)
-    
-    // if (countryCode === '234') {
-    //     phoneLabel.innerHTML = 'please enter country code'
-    //     phoneLabel.style.color = 'red'
-    //     phoneLabel.style.fontSize = '10px'
-    // }
+    let regex1 = /^[+][2][3][4]\d{11}$/
+    let regex2 = /^[0][8][0]\d{8}$/
+    let regex3 = /^[2][3][4]\d{11}$/
 
-    // if (countryCode ===)
-    
-    // else{
-    //     phoneLabel.innerHTML = 'number is correct'
-    //     phoneLabel.style.color = 'green'
-    //     phoneLabel.style.fontSize = '10px'
-    // }
-
-    //check length of phone number
-    if (phoneVal.length <= 10) {
-        phoneLabel.innerHTML = 'Please enter a valid phone number'
+    if (regex1.test(phoneVal) || regex2.test(phoneVal) || regex3.test(phoneVal)){
+            phoneLabel.innerHTML = 'number is correct'
+            phoneLabel.style.color = 'green'
+            phoneLabel.style.fontSize = '10px'
+    }else{
+        phoneLabel.innerHTML = 'invalid phone number'
         phoneLabel.style.color = 'red'
         phoneLabel.style.fontSize = '10px'
     }
-    if(phoneVal.length >= 12){
-        phoneLabel.innerHTML = 'Please enter a valid phone number'
+
+    if (phoneVal === ""){
+        phoneLabel.innerHTML = 'input cannot be empty'
         phoneLabel.style.color = 'red'
         phoneLabel.style.fontSize = '10px'
     }
+
+
 }  
+
+function passwordFunction() {
+    let password = passwordEl.value
+
+    // check password length
+    if (password.length < 6){
+        passwordLabel.innerHTML = 'password must be at least 6 characters long'
+        passwordLabel.style.color = 'red'
+        passwordLabel.style.fontSize = '10px'
+    }
+
+    if (password === ""){
+        passwordLabel.innerHTML = 'input cannot be empty'
+        passwordLabel.style.color = 'red'
+        passwordLabel.style.fontSize = '10px'
+    }
+
+
+
+
+}
+
+function viewHide(el){
+    // hide show password field
+    if(passwordEl.type === 'password'){
+        passwordEl.type = 'text'
+        passwordConfirmEl.type = 'text'
+    }else{
+        passwordEl.type = 'password'
+        passwordConfirmEl.type = 'password'
+    }
+
+
+    if(passwordConfirmEl.type === 'password'){
+        passwordConfirmEl.type = 'text'
+    }else{
+        passwordConfirmEl.type = 'password'
+    }
+} 
 
 
 // event listener
@@ -97,8 +137,10 @@ btn.addEventListener('click', function(e) {
     // check for valid email address
     emailFunction()
     // check for phone number
-    formatToPhone()
-
+    formatPhone()
     // check for password
-    // check if password match
+    passwordFunction()
 })
+
+eyeOne.addEventListener('click', function (e) {viewHide()})
+eyeTwo.addEventListener('click', function (e) {})
