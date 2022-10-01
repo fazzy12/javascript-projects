@@ -17,7 +17,7 @@ const passwordMatchLabel = document.querySelector('.password-match-label')
 
 // icons
 const eyeOne = document.querySelector('.fa-eye-slash')
-// const eyeTwo = document.querySelector('.lock1')
+const eyeTwo = document.querySelector('.lock1')
 
 
 // username function
@@ -29,6 +29,7 @@ function usernameFunction() {
         userLabel.style.color = 'red'
         userLabel.style.fontSize = '10px'
     }else{
+        userName.innerHTML = ""
         userLabel.textContent = 'good choice 👌'
         userLabel.style.color = 'green'
         userLabel.style.fontSize = '10px'
@@ -92,11 +93,16 @@ function formatPhone() {
 
 function passwordFunction() {
     let password = passwordEl.value
+    let passwordMatch = passwordConfirmEl.value
 
     // check password length
     if (password.length < 6){
         passwordLabel.innerHTML = 'password must be at least 6 characters long'
         passwordLabel.style.color = 'red'
+        passwordLabel.style.fontSize = '10px'
+    }else{
+        passwordLabel.innerHTML = 'correct password'
+        passwordLabel.style.color = 'green'
         passwordLabel.style.fontSize = '10px'
     }
 
@@ -104,31 +110,51 @@ function passwordFunction() {
         passwordLabel.innerHTML = 'input cannot be empty'
         passwordLabel.style.color = 'red'
         passwordLabel.style.fontSize = '10px'
+    }else{
+        passwordLabel.innerHTML = 'correct password'
+        passwordLabel.style.color = 'green'
+        passwordLabel.style.fontSize = '10px'
     }
 
+    if (passwordMatch !== password){
+        passwordMatchLabel.innerHTML = 'password must match'
+        passwordMatchLabel.style.color = 'red'
+        passwordMatchLabel.style.fontSize = '10px'
+    }else{
+        passwordMatchLabel.innerHTML = 'correct password'
+        passwordMatchLabel.style.color = 'green'
+        passwordMatchLabel.style.fontSize = '10px'
+    }
 
-
-
+    if (passwordMatch === ""){
+        passwordMatchLabel.innerHTML = 'input cannot be empty'
+        passwordMatchLabel.style.color = 'red'
+        passwordMatchLabel.style.fontSize = '10px'
+    }
 }
 
-function viewHide(el){
-    // hide show password field
-    if(passwordEl.type === 'password'){
-        passwordEl.type = 'text'
-        passwordConfirmEl.type = 'text'
-    }else{
-        passwordEl.type = 'password'
-        passwordConfirmEl.type = 'password'
-    }
-
-
-    if(passwordConfirmEl.type === 'password'){
-        passwordConfirmEl.type = 'text'
-    }else{
-        passwordConfirmEl.type = 'password'
-    }
-} 
-
+function hideView() {
+    eyeOne.addEventListener('click', function (e) {
+        if(passwordEl.type === 'password'){
+            passwordEl.type = 'text'
+            
+        }else{
+            passwordEl.type = 'password'
+            
+        }
+        
+        eyeOne.classList.toggle('fa-eye')
+    })
+    
+    eyeTwo.addEventListener('click', function (e) {
+        if(passwordConfirmEl.type === 'password'){
+            passwordConfirmEl.type = 'text'
+        }else{
+            passwordConfirmEl.type = 'password'
+        }
+        eyeTwo.classList.toggle('fa-eye')
+    })
+}hideView()
 
 // event listener
 btn.addEventListener('click', function(e) {
@@ -141,6 +167,3 @@ btn.addEventListener('click', function(e) {
     // check for password
     passwordFunction()
 })
-
-eyeOne.addEventListener('click', function (e) {viewHide()})
-eyeTwo.addEventListener('click', function (e) {})
